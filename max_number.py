@@ -1,18 +1,24 @@
-number1 = False
-number2 = False
+number1 = 0
+number2 = 0
 
-while type(number1) != int:
-    input1 = input("Give me a number: ")
+while True:
     try:
-        number1 = int(input1)
+        input1 = int(input("Please enter an integer: "))
     except ValueError:
-        print("Please try again.")
-    
-while type(number2) != int:
-    number2 = input("Give me another number: ")
-
-# number1 = input("Give me a number: ")
-# number2 = input("Give me another number: ")
+        print("That is not an integer, please try again.")
+        continue
+    else:
+        number1 = input1
+        break
+while True:
+    try:
+        input2 = int(input("Please enter an integer: "))
+    except ValueError:
+        print("That is not an integer, please try again.")
+        continue
+    else:
+        number2 = input2
+        break
 
 if number1 > number2:
     print "Your first number is larger than your second number"
