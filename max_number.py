@@ -2,8 +2,12 @@ number1 = False
 number2 = False
 
 while type(number1) != int:
-    number1 = input("Give me a number: ")
-
+    input1 = input("Give me a number: ")
+    try:
+        number1 = int(input1)
+    except ValueError:
+        print("Please try again.")
+    
 while type(number2) != int:
     number2 = input("Give me another number: ")
 
