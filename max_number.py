@@ -3,7 +3,8 @@ number2 = 0
 
 while True:
     try:
-        input1 = int(input("Please enter an integer: "))
+        input1 = input("Please enter an integer: ")
+        input1 = int(input1)
     except ValueError:
         print("That is not an integer, please try again.")
         continue
