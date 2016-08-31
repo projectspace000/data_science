@@ -45,3 +45,6 @@ list(locations.columns.values)
 # count locations by FSR
 fsr_counts = locations.groupby(["FSR"]).size()
 print(fsr_counts)
+
+state_counts = locations.groupby(["State"]).size()
+print(state_counts)
